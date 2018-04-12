@@ -93,3 +93,11 @@ input[type=text]{
     height: 140px;
 
 }
+
+.portfolio-clip{
+    position: absolute;
+    z-index: 2;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+}
