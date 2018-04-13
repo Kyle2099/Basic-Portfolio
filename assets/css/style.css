@@ -1,7 +1,9 @@
+* {
+    box-sizing: border-box;
+}
 
 header {
     background-color:#ffffff;
-    height: 100px;
     border-bottom: #cccccc solid 1px;
 }
 .headerbox{
@@ -9,23 +11,22 @@ header {
     margin: auto;
 }
 .title {
-    padding-bottom: 30px;
     background-color:  #4aaaa5;
-    padding-left: 20px;
-    padding-right:20px;
-    margin-left: 30px;
+    color: white;
     float:left;
-    padding-top: 30px;
+    font-size: 1.1em;
+    padding: 20px 20px 20px 20px;
 }
 body{
     background-color: lightgray;
 }
 
 nav {
-    margin-top: 30px;
     float: right;
 }
+nav a{
 
+}
 .clear-fix{
     clear:both;
 }
@@ -57,7 +58,18 @@ nav {
 
 }
 
+.clear-fix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
+.gallery-content {
+    width: 960px;
+    margin: 15px auto;
+    background-color: white;
+    padding: 20px;
+}
 
 footer {
     background-color: #666666;
@@ -80,17 +92,31 @@ input[type=text]{
 .contactinfo{
     padding-left: 85px;
 }
+.photo-gallery{
+    width: 100%;
+    border: 1px solid red;
+    
+}
+h2{
+    font-size: 1.5em;
+    color: #4aaaa5;
+    border-bottom: 1px solid grey;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
 
 .portfolio-item{
     position: relative;
     float: left;
+    margin: 5px;
+    width: 300px;
 }
 
 .portfolio-pic{
     position: static;
     display: block;
-    width: 140px;
-    height: 140px;
+    width: 100%;
 
 }
 
